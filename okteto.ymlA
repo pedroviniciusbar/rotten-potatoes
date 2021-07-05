@@ -1,7 +1,7 @@
 name: frontend
 labels:
   app.kubernetes.io/component: frontend
-image: pedrinhof003/rotten-potatoes:latest
+image: mcaldeiragoes/rotten-potatoes:latest
 command: yarn start
 sync:
   - .:/src
