@@ -1,10 +1,9 @@
-name: mongodb
-command: bash
-volumes:
-- /root/.cache/pip
+name: frontend
+labels:
+  app.kubernetes.io/component: frontend
+image: pedrinhof003/rotten-potatoes:latest
+command: yarn start
 sync:
-- .:/
-forward:
-- 27017:27017
-reverse:
-- 9000:9000
+  - .:/src
+persistentVolume:
+  enabled: false
