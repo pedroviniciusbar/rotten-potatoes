@@ -69,5 +69,5 @@ jobs:
         with:
           namespace: rotten-potatoes-pedroviniciusbar
           manifests: |
-            k8s/web/deployments.yaml
+            k8s/deploymentsMovie.yaml
           images: pedrinhof003/rotten-potatoes:${{ github.run_number }}
