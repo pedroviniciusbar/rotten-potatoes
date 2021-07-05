@@ -14,7 +14,7 @@ spec:
     spec:
        containers:
          - name: movies
-           image: mcaldeiragoes/rotten-potatoes:latest
+           image: pedrinhof003/rotten-potatoes:latest
            ports:
              - containerPort: 5000
            env:
