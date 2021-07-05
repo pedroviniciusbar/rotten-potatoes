@@ -1,0 +1,10 @@
+name: mongodb
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- .:/
+forward:
+- 27017:27017
+reverse:
+- 9000:9000
