@@ -36,7 +36,7 @@ kind: Service
 metadata:
   name: movie-service
   annotations:
-    dev.okteto.com/auto-ingress: "private"
+    dev.okteto.com/auto-ingress: "true"
 spec:
   type: NodePort
   selector:
@@ -45,3 +45,4 @@ spec:
     - port: 8080
       protocol: TCP
       targetPort: 8080
+
