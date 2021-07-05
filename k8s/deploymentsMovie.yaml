@@ -38,7 +38,7 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "private"
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: movies
   ports:
