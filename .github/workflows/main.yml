@@ -61,13 +61,12 @@ jobs:
         with:
           namespace: rotten-potatoes-pedroviniciusbar
           manifests: |
-            k8s/deployments.yaml
-            k8s/service.yaml
+            k8s/web/deployments.yaml
             
       - name: Deploy web
         uses: Azure/k8s-deploy@v1
         with:
           namespace: rotten-potatoes-pedroviniciusbar
           manifests: |
-            k8s/deploymentsMovie.yaml
+            k8s/mongodb/deployments.yaml
           images: pedrinhof003/rotten-potatoes:${{ github.run_number }}
