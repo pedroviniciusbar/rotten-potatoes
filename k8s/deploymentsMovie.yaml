@@ -16,7 +16,7 @@ spec:
          - name: movies
            image: mcaldeiragoes/rotten-potatoes:latest
            ports:
-             - containerPort: 8080
+             - containerPort: 5000
            env:
              - name: MONGODB_DB
                value: admin
@@ -42,6 +42,6 @@ spec:
   selector:
     app: movies
   ports:
-    - port: 8080
+    - port: 5000
       protocol: TCP
       targetPort: 8080
