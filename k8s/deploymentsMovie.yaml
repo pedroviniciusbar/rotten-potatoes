@@ -27,7 +27,7 @@ spec:
              - name: MONGODB_USERNAME
                value: mongouser
              - name: MONGODB_PASSWORD
-               value: Password!1@2
+               value: mongopwd
 
 ---
 
