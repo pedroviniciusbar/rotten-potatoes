@@ -1,9 +1,0 @@
-name: frontend
-labels:
-  app.kubernetes.io/component: frontend
-image: mcaldeiragoes/rotten-potatoes:latest
-command: yarn start
-sync:
-  - .:/src
-persistentVolume:
-  enabled: false
